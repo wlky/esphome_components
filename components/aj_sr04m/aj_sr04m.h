@@ -3,6 +3,7 @@
 #include "esphome/core/component.h"
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/core/hal.h"
+#include "esphome/components/uart/uart.h"
 
 namespace esphome
 {
