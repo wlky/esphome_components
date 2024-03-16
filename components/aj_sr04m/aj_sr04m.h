@@ -9,7 +9,7 @@ namespace esphome
   namespace aj_sr04m
   {
 
-    class AJ_SR04M_Sensor : public sensor::Sensor, public UARTDevice, public PollingComponent
+    class AJ_SR04M_Sensor : public sensor::Sensor, public uart::UARTDevice, public PollingComponent
     {
     public:
       void update() override;
