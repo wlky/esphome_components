@@ -11,13 +11,13 @@ from esphome.const import (
 DEPENDENCIES = ["uart"]
 
 aj_sr04m_ns = cg.esphome_ns.namespace("aj_sr04m")
-AJSR04MSensor = aj_sr04m_ns.class_(
-    "AJSR04MSensor", sensor.Sensor, cg.PollingComponent, uart.UARTDevice
+AJ_SR04M_Sensor = aj_sr04m_ns.class_(
+    "AJ_SR04M_Sensor", sensor.Sensor, cg.PollingComponent, uart.UARTDevice
 )
 
 CONFIG_SCHEMA = (
     sensor.sensor_schema(
-        AJSR04MSensor,
+        AJ_SR04M_Sensor,
         unit_of_measurement=UNIT_PERCENT,
         icon=ICON_WATER_PERCENT,
         accuracy_decimals=2,
